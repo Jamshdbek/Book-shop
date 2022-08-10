@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import { useDispatch, useSelector} from "react-redux";
 import { addBook } from "../actions/bookActions";
 import Books from "../components/Books";
-import uniqid from 'uniqid';
 
 function Shop() {
   let dispatch = useDispatch();
   const [book, setBook] = useState({});
-// const bookSelector=useSelector()
   const handleChange = (e) => {
     setBook({ ...book, [e.target.name]: e.target.value });
   };

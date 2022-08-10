@@ -10,12 +10,17 @@ function BookCard(props) {
     dispatch(removeBook(book.id))
   }
 
+  const handleBuy = () =>{
+    // dispatch(buyBook(book.id))
+  }
+
   return (
     <div className="bookCard">
       <h3>{book.title}</h3>
       <h4>{book.author}</h4>
       <p>{book.price}</p>
       <button onClick={deleteBook}>Remove</button>
+      <button onClick={handleBuy}>Buy</button>
     </div>
   );
 }
