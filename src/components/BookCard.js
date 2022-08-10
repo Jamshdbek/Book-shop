@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { removeBook } from "../actions/bookActions";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
-
+import {buyBook} from "../actions/bookActions"
 function BookCard(props) {
   const dispatch = useDispatch();
   const book = props.book;
@@ -13,7 +13,7 @@ function BookCard(props) {
   };
 
   const handleBuy = () => {
-    // dispatch(buyBook(book.id))
+    dispatch(buyBook(book.id))
   };
 
   return (

@@ -13,3 +13,10 @@ export const removeBook = (idParam) => {
     idParam:idParam
   };
 }
+
+export const buyBook = (ideParam) =>{
+  return{
+    type:actionNames.BUY_BOOK,
+   book: ideParam
+  }
+}
