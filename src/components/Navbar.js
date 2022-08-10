@@ -15,6 +15,8 @@ const Navbar = () => {
                     <li><Link className='link-list' to='/'>Shop</Link></li>
                     <li><Link className='link-list' to='contact'>Contact</Link></li>
                     <li><Link className='link-list' to='about'>About</Link></li>
+                    <li><Link className='link-list' to='cart'>Cart</Link></li>
+
                     <li><Link className='link-list' to='category'>Category</Link></li>
                 </ul>
                 <div className="search">
