@@ -13,3 +13,9 @@ export const removeBook = (idParam) => {
     idParam:idParam
   };
 }
+export const saidbarOpen = (param) =>{
+  return{
+    type: actionNames.SAIDBAR_OPEN,
+    param:param
+  }
+}
