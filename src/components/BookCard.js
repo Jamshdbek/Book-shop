@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import { removeBook } from "../actions/bookActions";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import Button from 'react-bootstrap/Button';
+
 // import {buyBook} from "../actions/bookActions"
 function BookCard(props) {
   const dispatch = useDispatch();
@@ -17,7 +19,7 @@ function BookCard(props) {
   return (
     <div >
   
-      <Card className="bookCard" style={{ width: "18rem" }}>
+      {/* <Card className="bookCard" style={{ width: "18rem" }}>
         <Card.Img
           variant="top"
           src="https://avatars.mds.yandex.net/i?id=86867fcac3a93054e494bdbcd7f7b423-6088960-images-thumbs&n=13"
@@ -28,13 +30,34 @@ function BookCard(props) {
         <ListGroup className="list-group-flush">
         
           <ListGroup.Item>
-            {" "}
+            
             <p>{book.price}</p>
           </ListGroup.Item>
-          <button onClick={deleteBook}>Remove</button>
-          <button onClick={()=>{props.handleChange(book.id)}}>Buy</button>
+          <button className="remove" onClick={deleteBook}>Remove</button>
+          <button class onClick={()=>{props.handleChange(book.id)}}>Buy</button>
         </ListGroup>
-      </Card>
+      </Card> */}
+      <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://avatars.mds.yandex.net/i?id=86867fcac3a93054e494bdbcd7f7b423-6088960-images-thumbs&n=13" />
+      <Card.Body>
+        <Card.Title>title: {book.title}</Card.Title>
+        <Card.Text>
+          author:
+         {book.author}
+
+        </Card.Text>
+        <ListGroup.Item>
+            
+            <p>price: {book.price}</p>
+          </ListGroup.Item>
+
+      </Card.Body>
+          <div className="buttoms">
+
+        <Button  onClick={deleteBook}>remove</Button>
+        <Button   onClick={()=>{props.handleChange(book.id)}}>buy</Button>
+          </div>
+    </Card>
     </div>
   );
 }

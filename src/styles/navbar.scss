@@ -3,8 +3,13 @@
   z-index: 99;
   background: $--black;
   width: 100%;
-
-  .nav-box {
+h1{
+  color:#fff
+}
+img{
+  width: 50px;
+}
+.nav-box {
     display: flex;
     align-items: center;
     justify-content: space-between;

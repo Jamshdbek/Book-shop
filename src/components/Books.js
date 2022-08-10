@@ -8,7 +8,7 @@ function Books() {
   const books = useSelector((state) => state.books);
   const cartArr = useSelector((state) => state.cart);
   let dispatch = useDispatch();
-
+// console.log(books.price);
   const handleChange = (id) => {
     const buyBook = books.find((book) => book.id === id);
     if (cartArr.find((book) => book.id === id)) {

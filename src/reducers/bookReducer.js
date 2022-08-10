@@ -10,6 +10,7 @@ export const bookReducer = (books = [],  bookAction) => {
   switch (bookAction.type) {
     case actionNames.ADD_BOOK:
       return [...books, { ...bookAction.book, id: newId++ }];
+    
     case actionNames.REMOVE_BOOK:
       return books.filter((book) => book.id !== bookAction.idParam);
        
