@@ -1,6 +1,17 @@
 .bookCard {
   border: 1px solid gray;
-  width: 300px;
+  width: 20vh;
+  height: 40vh;
   padding: 20px;
   box-shadow: 0 0 3px 3px gray;
+}
+img{
+  width: 10vh;
+}
+.body_card{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
 }
