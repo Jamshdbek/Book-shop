@@ -1,0 +1,51 @@
+.navbar {
+  position: fixed;
+  z-index: 99;
+  background: $--black;
+  width: 100%;
+
+  .nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    width: 100%;
+
+    .logo {
+      font-size: 1.7rem;
+      font-family: $--logo-font;
+      color: $--wheat;
+    }
+
+    ul {
+      display: flex;
+      gap: 3rem;
+      list-style: none;
+
+      .link-list {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $--wheat;
+        font-weight: 500;
+      }
+    }
+    .search {
+      height: 10vh;
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 300px;
+        outline: none;
+        padding: 0 .5rem;
+        font-size: 1.3rem;
+        border:none  ;
+        border-bottom: 2px solid $--wheat;
+        background-color: transparent;
+        color: $--wheat !important;
+        font-weight: 300;
+      }
+    }
+
+  }
+}
