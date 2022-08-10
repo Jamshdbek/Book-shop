@@ -15,11 +15,16 @@ export const removeBook = (idParam) => {
 }
 
 
+export const buyBook = (ideParam) =>{
+  return{
+    type:actionNames.BUY_BOOK,
+   book: ideParam
 
+  }
+}
 export const saidbarOpen = (param) =>{
   return{
     type: actionNames.SAIDBAR_OPEN,
     param:param
-
   }
 }
