@@ -14,9 +14,12 @@ export const removeBook = (idParam) => {
   };
 }
 
-export const buyBook = (ideParam) =>{
+
+
+export const saidbarOpen = (param) =>{
   return{
-    type:actionNames.BUY_BOOK,
-   book: ideParam
+    type: actionNames.SAIDBAR_OPEN,
+    param:param
+
   }
 }

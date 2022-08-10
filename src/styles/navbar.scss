@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 5%;
+    padding: .5rem 5%;
     width: 100%;
 
     .logo {
@@ -29,6 +29,11 @@
         font-weight: 500;
       }
     }
+    .add-icon{
+      background-color: #d9d9d9;
+      font-size: 1.1rem;
+      border-radius: 50%;
+    }
     .search {
       height: 10vh;
       display: flex;
@@ -39,13 +44,22 @@
         outline: none;
         padding: 0 .5rem;
         font-size: 1.3rem;
-        border:none  ;
+        border: none;
         border-bottom: 2px solid $--wheat;
         background-color: transparent;
         color: $--wheat !important;
         font-weight: 300;
       }
     }
-
+    .login {
+      background-color: $--primary-color;
+        border-radius: 2rem;
+        padding: 5px 2rem;
+      .login-link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $--wheat;
+      }
+    }
   }
 }

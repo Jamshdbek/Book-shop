@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
-import {addBook} from "../actions/bookActions";
+import {addBook, saidbarOpen} from "../actions/bookActions";
 import {useDispatch, useSelector} from "react-redux";
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
 function FormInput(props) {
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    let show = useSelector((state)=>state.param)
+    const handleClose = false
 
     let dispatch = useDispatch()
     const [book, setBook] = useState({});
@@ -24,11 +23,7 @@ function FormInput(props) {
 
     return (
         <>
-            <Button variant="primary" onClick={handleShow}>
-                Launch
-            </Button>
-
-            <Offcanvas show={show} onHide={handleClose}>
+            <Offcanvas show={show} onHide={()=>{dispatch(saidbarOpen(false))}}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title>Offcanvas</Offcanvas.Title>
                 </Offcanvas.Header>
