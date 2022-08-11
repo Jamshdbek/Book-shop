@@ -3,11 +3,12 @@
   // }
   .body_card{
     width: 100%;
-    height: 100vh;
-    background-color: red;
+    height: 80vw;
+    background:  linear-gradient(10deg , rgb(35, 21, 21) 55% , rgb(233, 238, 233) 5%);
     display: grid;
     grid-template-columns: auto auto auto auto ;
-  gap: 60px;
+  // gap: 10px;
+  padding:5vh;
 
     .bookCard {
       width: 20vh;
@@ -15,13 +16,36 @@
       padding-bottom: 30px;
       .buttoms{
         display: subgrid;
+        padding: 20px;
+        background-color: red;
+        width: 100%;
+        height: 30px;
+
         
       }
       button{
         margin-left: 10px;
 
       }
+      .remove{
+        margin-left: 10px;
+      }
       
     }
 
+}
+
+.cart_body{
+  width: 100%;
+  height: 100vh;
+  // background-color: red;
+  display: grid 
+  ;
+  gap: 10px;
+  padding: 5vh;
+  grid-template-columns: auto auto auto auto;
+  .cartover{
+    height: 40vh;
+    width: 20vh;
+  }
 }

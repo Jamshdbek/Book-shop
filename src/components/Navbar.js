@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {saidbarOpen} from "../actions/bookActions";
 import { useEffect } from 'react';
-
+import "../styles/navbar.scss"
 const Navbar = () => {
      const dispatch  = useDispatch()
      const prices = useSelector((state) => state.books);

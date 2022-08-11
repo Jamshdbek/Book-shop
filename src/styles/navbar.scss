@@ -1,3 +1,4 @@
+@import "./varebls.scss";
 .navbar {
   position: fixed;
   z-index: 99;
@@ -16,6 +17,7 @@ img{
     padding: .5rem 5%;
     width: 100%;
 
+   
     .logo {
       font-size: 1.7rem;
       font-family: $--logo-font;
